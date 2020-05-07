@@ -156,10 +156,10 @@ exports.updatePost = async (req, res, next) => {
   }
 };
 
-const clearImage = filePath => {
-  filePath = path.join(__dirname, '..', filePath);
-  fs.unlink(filePath, error => console.log(error));
-};
+// const clearImage = filePath => {
+//   filePath = path.join(__dirname, '..', filePath);
+//   fs.unlink(filePath, error => console.log(error));
+// };
 
 exports.deletePost = async (req, res, next) => {
   postId = req.params.postId;
